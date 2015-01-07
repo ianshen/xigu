@@ -66,14 +66,6 @@ class UserController extends ActiveController {
 				'checkAccess' 
 			] 
 		];
-		$actions ['islogged'] = [ 
-			'class' => 'app\modules\v1\actions\user\IsloggedAction',
-			'modelClass' => $this->modelClass,
-			'checkAccess' => [ 
-				$this,
-				'checkAccess' 
-			] 
-		];
 		return $actions;
 	}
 
@@ -96,9 +88,6 @@ class UserController extends ActiveController {
 				'DELETE' 
 			],
 			'login' => [ 
-				'POST' 
-			],
-			'islogged' => [ 
 				'POST' 
 			],
 			'logout' => [ 
