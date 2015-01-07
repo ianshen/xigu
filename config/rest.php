@@ -21,7 +21,7 @@ $config = [
 			'class' => '\yii\mongodb\Connection',
 			'dsn' => 'mongodb://ianshen:4sQY61k1dmJb@10.10.21.200:27017/shanshan' 
 		],
-		/* 'urlManager' => [ 
+		'urlManager' => [ 
 			'enablePrettyUrl' => true,
 			'enableStrictParsing' => false,
 			'showScriptName' => false,
@@ -31,9 +31,9 @@ $config = [
 					'controller' => [ 
 						'v1/user' 
 					] 
-				]
+				] 
 			] 
-		], */
+		],
 		'request' => [ 
 			// !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
 			'enableCookieValidation' => false,

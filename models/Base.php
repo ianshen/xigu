@@ -13,6 +13,34 @@ class Base extends Model {
 	public static $query = null;
 
 	/**
+	 * 城市
+	 *
+	 * @var unknown
+	 */
+	public static $cityCN = 'city';
+
+	/**
+	 * 地区
+	 *
+	 * @var unknown
+	 */
+	public static $areaCN = 'area';
+
+	/**
+	 * 街道
+	 *
+	 * @var unknown
+	 */
+	public static $districtCN = 'district';
+
+	/**
+	 * 圈子
+	 *
+	 * @var unknown
+	 */
+	public static $communityCN = 'community';
+
+	/**
 	 * 自增ID集合
 	 *
 	 * @var unknown
