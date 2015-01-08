@@ -4,6 +4,10 @@ namespace app\models;
 
 class User extends Base {
 
+	public static function collectionName() {
+		return self::$userCN;
+	}
+
 	public static function register() {
 	}
 

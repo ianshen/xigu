@@ -13,35 +13,70 @@ class Base extends Model {
 	public static $query = null;
 
 	/**
-	 * 城市
+	 * 城市表
 	 *
 	 * @var unknown
 	 */
 	public static $cityCN = 'city';
 
 	/**
-	 * 地区
+	 * 地区表
 	 *
 	 * @var unknown
 	 */
 	public static $areaCN = 'area';
 
 	/**
-	 * 街道
+	 * 街道表
 	 *
 	 * @var unknown
 	 */
 	public static $districtCN = 'district';
 
 	/**
-	 * 圈子
+	 * 圈子表
 	 *
 	 * @var unknown
 	 */
 	public static $communityCN = 'community';
 
 	/**
-	 * 自增ID集合
+	 * 服务商（小店）表
+	 *
+	 * @var unknown
+	 */
+	public static $serviceCN = 'service';
+
+	/**
+	 * 服务商（小店）类别表
+	 *
+	 * @var unknown
+	 */
+	public static $serviceCategoryCN = 'serv_cat';
+
+	/**
+	 * 服务（商品）表
+	 *
+	 * @var unknown
+	 */
+	public static $packageCN = 'package';
+
+	/**
+	 * 服务（商品）类别表
+	 *
+	 * @var unknown
+	 */
+	public static $packageCategoryCN = 'pkg_cat';
+
+	/**
+	 * 用户表
+	 *
+	 * @var unknown
+	 */
+	public static $userCN = 'user';
+
+	/**
+	 * 自增ID表
 	 *
 	 * @var unknown
 	 */
