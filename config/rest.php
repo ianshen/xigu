@@ -10,6 +10,12 @@ $config = [
 	'modules' => [ 
 		'v1' => [ 
 			'class' => 'app\modules\v1\v1' 
+		],
+		'copartner' => [ 
+			'class' => 'app\modules\copartner' 
+		],
+		'service' => [ 
+			'class' => 'app\modules\service\service' 
 		] 
 	],
 	'aliases' => [ 
