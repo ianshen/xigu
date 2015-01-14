@@ -6,9 +6,9 @@ class Community extends Base {
 
 	public static $_fields = [ 
 		'id',
-		'name', // 圈子名称
+		'name', // 名称
 		'district_id', // 所属街道
-		'address',
+		'address', // 详细地址
 		'desc',
 		'create_time',
 		'create_time',
