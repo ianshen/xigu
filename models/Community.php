@@ -6,7 +6,13 @@ class Community extends Base {
 
 	public static $_fields = [ 
 		'id',
-		'name' 
+		'name', // 圈子名称
+		'district_id', // 所属街道
+		'address',
+		'desc',
+		'create_time',
+		'create_time',
+		'status' 
 	];
 
 	public static function collectionName() {
@@ -23,7 +29,7 @@ class Community extends Base {
 		return $res;
 	}
 
-	public static function modCommunity($condition = [], $data = []) {
+	public static function modCommunity($condition, $data) {
 		$res = self::modify ( $condition, $data );
 		return $res;
 	}

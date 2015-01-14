@@ -4,6 +4,17 @@ namespace app\models;
 
 class User extends Base {
 
+	public static $_fields = [ 
+		'id',
+		'mobile',
+		'email',
+		'passwd',
+		'name',
+		'create_time',
+		'update_time',
+		'status' 
+	];
+
 	public static function collectionName() {
 		return self::$userCN;
 	}
@@ -18,7 +29,7 @@ class User extends Base {
 		return $res;
 	}
 
-	public static function modUser($condition = [], $data = []) {
+	public static function modUser($condition, $data) {
 		$res = self::modify ( $condition, $data );
 		return $res;
 	}

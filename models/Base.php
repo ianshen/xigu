@@ -55,11 +55,18 @@ class Base extends Model {
 	public static $serviceCN = 'service';
 
 	/**
-	 * 服务商（小店）类别表
+	 * 服务商（小店）类别表（如面馆、干洗、开锁、美容等...）
 	 *
 	 * @var unknown
 	 */
 	public static $serviceCategoryCN = 'serv_cat';
+
+	/**
+	 * 圈子-服务关系表
+	 *
+	 * @var unknown
+	 */
+	public static $communityServiceCN = 'comm_serv';
 
 	/**
 	 * 服务（商品）表
@@ -69,7 +76,7 @@ class Base extends Model {
 	public static $packageCN = 'package';
 
 	/**
-	 * 服务（商品）类别表
+	 * 服务（商品）类别表（如面食、主食、盖饭等...）
 	 *
 	 * @var unknown
 	 */

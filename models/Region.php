@@ -22,7 +22,7 @@ class Region extends Base {
 		return $res;
 	}
 
-	public static function modProvince($condition = [], $data = []) {
+	public static function modProvince($condition, $data) {
 		$res = self::modify ( $condition, $data, self::$provinceCN );
 		return $res;
 	}
@@ -37,7 +37,7 @@ class Region extends Base {
 		return $res;
 	}
 
-	public static function modCity($condition = [], $data = []) {
+	public static function modCity($condition, $data) {
 		$res = self::modify ( $condition, $data, self::$cityCN );
 		return $res;
 	}
@@ -52,7 +52,7 @@ class Region extends Base {
 		return $res;
 	}
 
-	public static function modArea($condition = [], $data = []) {
+	public static function modArea($condition, $data) {
 		$res = self::modify ( $condition, $data, self::$areaCN );
 		return $res;
 	}
@@ -67,7 +67,7 @@ class Region extends Base {
 		return $res;
 	}
 
-	public static function modDistrict($condition = [], $data = []) {
+	public static function modDistrict($condition, $data) {
 		$res = self::modify ( $condition, $data, self::$districtCN );
 		return $res;
 	}
