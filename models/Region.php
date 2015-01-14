@@ -12,6 +12,21 @@ class Region extends Base {
 		'status' 
 	];
 
+	public static function addProvince($data) {
+		$res = self::insert ( $data, self::$provinceCN );
+		return $res;
+	}
+
+	public static function findProvince($condition) {
+		$res = self::findAll ( $condition, self::$provinceCN );
+		return $res;
+	}
+
+	public static function modProvince($condition = [], $data = []) {
+		$res = self::modify ( $condition, $data, self::$provinceCN );
+		return $res;
+	}
+
 	public static function addCity($data) {
 		$res = self::insert ( $data, self::$cityCN );
 		return $res;

@@ -13,6 +13,13 @@ class Base extends Model {
 	public static $query = null;
 
 	/**
+	 * 省表
+	 *
+	 * @var unknown
+	 */
+	public static $provinceCN = 'province';
+
+	/**
 	 * 城市表
 	 *
 	 * @var unknown

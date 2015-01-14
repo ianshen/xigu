@@ -22,4 +22,9 @@ class Community extends Base {
 		$res = self::findAll ( $condition );
 		return $res;
 	}
+
+	public static function modCommunity($condition = [], $data = []) {
+		$res = self::modify ( $condition, $data );
+		return $res;
+	}
 }

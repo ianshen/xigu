@@ -4,7 +4,7 @@ namespace app\controllers;
 
 use Yii;
 
-class CommunityController extends BaseController {
+class ServiceController extends BaseController {
 
 	public function behaviors() {
 	}

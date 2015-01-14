@@ -17,4 +17,9 @@ class Service extends Base {
 		$res = self::findAll ( $condition );
 		return $res;
 	}
+
+	public static function modService($condition = [], $data = []) {
+		$res = self::modify ( $condition, $data );
+		return $res;
+	}
 }
